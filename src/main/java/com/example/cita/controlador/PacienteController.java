@@ -15,7 +15,8 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("app")
-@CrossOrigin(origins = {"http://localhost:4200", "${cors.allowed.origins:}"})
+@CrossOrigin(origins = {"http://localhost:4200", 
+                        "https://citas-medicas-front-six.vercel.app"})
 public class PacienteController {
 
     @Autowired
