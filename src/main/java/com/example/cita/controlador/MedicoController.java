@@ -13,7 +13,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("app")
-@CrossOrigin(value = "http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "${cors.allowed.origins:}"})
 public class MedicoController {
 
     @Autowired
